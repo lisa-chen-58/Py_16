@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DONT FORGET TO CHANGE TITLE -->
+    <title>ALL USERS</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body class="bg bg-dark text-light text-center">
+
+    <h1>Add a User!</h1>
+    <a href="/" class="btn btn-danger">Return Home</a>
+    <hr>
+    <form action="/create/user" method="POST">
+        <!-- <input type="hidden" class="form-control text-center" first_name="first_name"> -->
+        <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="text" class="form-control text-center" name="first_name">
+        </div>
+        <div class="form-group">
+            <label for="last_name">Last Name</label>
+            <input type="text" class="form-control text-center" name="last_name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="text" class="form-control text-center" name="email">
+        </div>
+        <button type="submit" class="btn btn-info">Create User</button>
+
+    </form>
+
+
+
+</body>
+
+</html>
